@@ -27,36 +27,46 @@ Therefore, if the model predicts that a lot of clients will churn that would als
 
 ## Navigation
 
-You can find the following files/folders in my repository:
+You can find the following files in the repository:
 
-### [`Real Estate Market Analysis.ipynb`](https://github.com/renoneto/second_module_project/blob/main/Real%20Estate%20Market%20Analysis.ipynb)
+### [`Churn Prediction.ipynb`](https://github.com/renoneto/third_module_project/blob/main/Churn%20Prediction.ipynb)
 
 - **Content:** Main Jupyter Notebook with the whole analysis.
 
-- **What I'm doing:**
+**What I'm doing:**
 
-1. Dataset Exploration and Cleaning.
-2. Asking Questions to understand the Housing Market.
-3. Running Revenue Simulations given the Business Model, trying to find the best combination of No. of Agents and Zip Codes that will increase Net Income/ROI.
-4. Creating a Linear Regression Model to predict the Sale Price of Houses.
-5. Analyzing the final model, understanding the weights given to each feature.
-6. Presenting Conclusions/Recommendations.
-
-### [`presentation.pdf`](https://github.com/renoneto/second_module_project/blob/main/presentation.pdf)
+1. Dataset Exploration and Cleaning
+2. Cleaning anda testing for Uniqueness
+3. Modeling
+    - K-Nearest Neighbors Classifier
+    - Address Class Imbalance Problem
+    - True vs False Positives Trade-off
+    - Logistic Regression
+    - Decision Tree
+    - Random Forest
+    - XGBoost
+4. Comparing Models
+5. Choosing a Model
+6. Model Tuning
+7. Model Interpretation
+### [`presentation.pdf`](https://github.com/renoneto/third_module_project/blob/main/presentation.pdf)
 
 - **Content:** Non-technical presentation to stakeholders.
 
-#### [Link to Google Slides](https://docs.google.com/presentation/d/1bBNCAuONw2pTGlWJGgOkkmau2-aE26REFldoL6vYWwo/edit?usp=sharing)
-
-## Market Insights
-
-## Revenue Simulation
-
-## Linear Regression Model to estimate Sold Price
-
-
+#### [Link to Google Slides](https://docs.google.com/presentation/d/1SPkJVTJQiTDg1zk6MLPEP1SCyRKsn67lAQZ1AESXfbM/edit?usp=sharing)
 
 ## Conclusions
+After choosing the Decision Tree model it's possible to analyze it and get to the following conclusions:
 
-## Next Steps
+#### What's wrong with High Spenders?
+A 94% of churning if the Total Charge is greater than 74.03 USD is a problem. Further research on the group is necessary for further recommendations.
 
+#### What's wrong with the International Plan?
+Non-High Spenders have high chances (82%) of churning if they have the International Plan. Maybe there's something wrong with the product. It would be worthwhile to understand what's wrong with it. Read complaints/feedback from users.
+
+#### Reduce the No. of Customer Service Calls:
+It's expected that more Customer Service Calls would lead to higher chances of churning. If a client is calling often is because there's something wrong and the company is not fixing it. I guess a good idea would be to understand the reasons of those calls and see if there's anything the Telecom can do in the product to fix those problems and reduce the No. of Calls.
+
+Another suggestion could be to reduce the No. of Calls by providing online solutions to users or create educational materials to teach users how to use the product or a FAQ page. However, it's important to say that No. of Calls should not imply causation, rather, we should understand the reason behind the calls and work on those things.
+
+Another possibility is that the Customer Service team is not doing a great job. Maybe they're taking to long to answer calls or solve problems.
